@@ -1,0 +1,30 @@
+<header class="menu">
+    <nav class="menu__nav">
+        <select class="menu__dropdown menu__dropdown_loading">
+            <option selected disabled>Navigate</option>
+            <% routes.filter(({ url }) => url !== currentUrl).forEach(({ url, title }) => { %>
+                <option value="<%= url %>">
+                    <%= title %>
+                </option>
+              <% }); %>
+        </select>
+    </nav>
+</header>
+
+<header class="menu menu_desktop">
+    <nav class="menu__nav">
+        <ul class="menu__list menu__list_open">
+            <% routes.forEach(({ url, title }) => { %>
+                <li>
+                    <<%= url === currentUrl ? 'span' : 'a' %>
+                        rel="prerender"
+                        class="menu__item <%= url === currentUrl ? 'menu__item_disabled' : '' %>"
+                        <%= url === currentUrl ? '' : `href=${url}` %>
+                    >
+                        <%= title %>
+                    </a>
+                </li>
+              <% }); %>
+        </ul>
+    </nav>
+</header>

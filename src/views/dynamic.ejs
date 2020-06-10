@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="<%= millimetr.globals.language %>">
+  <%- include('../includes/head', { title: millimetr.globals.title, description: millimetr.globals.description }) %>
+
+  <body>
+    <div class="layout">
+      <%- include('../includes/menu', { routes: millimetr.internals.routes.all, currentUrl: millimetr.internals.routes.active.url }) %>
+
+      <main class="layout__content">
+        <h1><%= title %></h1>
+
+        <p>
+          The following date was created dynamically during the build-process:
+        </p>
+
+        <code class="code"><%= date.toString() %></code>.
+      </main>
+
+      <%- include('../includes/footer') %>
+    </div>
+  </body>
+</html>

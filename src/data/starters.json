@@ -1,0 +1,38 @@
+[
+    {
+        "name": "millimetr-default",
+        "icon": "🔨",
+        "description": "This is a basic millimetr starting template.",
+        "url": "https://github.com/millimetr/millimetr-default"
+    },
+    {
+        "name": "millimetr-parcel",
+        "icon": "📦",
+        "description": "A millimetr starting template that uses ParcelJS to transpile ES6 and compile Sass.",
+        "url": "https://github.com/millimetr/millimetr-parcel"
+    },
+    {
+        "name": "millimeter-netlify-cms",
+        "icon": "🧲",
+        "description": "A millimetr starting template with Netlify CMS integration.",
+        "url": "https://github.com/millimetr/millimetr-netlify-cms"
+    },
+    {
+        "name": "millimetr-storybook",
+        "icon": "📓",
+        "description": " A millimetr starting template with Storybook integration.",
+        "url": "https://github.com/millimetr/millimetr-storybook"
+    },
+    {
+        "name": "millimetr-preact",
+        "icon": "⚛️",
+        "description": "A millimetr starting template with Preact integration.",
+        "url": "https://github.com/millimetr/millimetr-preact"
+    },
+    {
+        "name": "millimetr-pug",
+        "icon": "🐶",
+        "description": "A millimetr starting template that uses Pug instead of EJS.",
+        "url": "https://github.com/millimetr/millimetr-pug"
+    }
+]

@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="<%= millimetr.globals.language %>">
+  <%- include('../includes/head', { title: millimetr.globals.title, description: millimetr.globals.description }) %>
+
+  <body>
+    <div class="layout">
+      <%- include('../includes/menu', { routes: millimetr.internals.routes.all, currentUrl: millimetr.internals.routes.active.url }) %>
+
+      <main class="layout__content">
+        <h1><%= title %></h1>
+
+        <p>
+          This is a basic millimetr starting template.
+        </p>
+
+        <p>
+          It intentionally has as little configuration and integrations as possible - allowing you to configure it how you want from the ground up.
+        </p>
+
+        <p>
+          <em>Note that the CSS selectors in this demo follow the <a href="https://en.bem.info/methodology/css/#selectors" target="_blank">BEM convention</a>. However you are welcome to restructure them according to your preferences.</em>
+        </p>
+
+
+        <h2 class='title title_minor'>Getting started</h2>
+
+        <ol>
+          <li><code class="code">git clone https://github.com/millimetr/millimetr-default.git</code></li>
+          <li><code class="code">npm install</code></li>
+          <li><code class="code">npm start</code></li>
+        </ol>
+
+        <h2 class='title title_minor'>Principles</h2> 
+
+        <ul>
+          <li>📄 That HTML templates are written in <a href="https://ejs.co/">EJS</a></li>
+          <li>🤖 The <code class="code">millimetr.config.js</code> file is central to this starter.</li>
+          <li>👓 No hidden behaviour, everything is documented via <code class="code">millimetr.config.js</code> file.</li>
+        </ul>
+
+        <h2 class='title title_minor'>Example routes</h2>
+
+        <ul>
+          <li><code class="code">/</code>: The basic landing-route.</li>
+          <li><code class="code">/hardcoded</code>: Illustrates how hardcoded values can be passed to route templates.</li>
+          <li><code class="code">/dynamic</code>: Illustrates how dynamically generated values can be passed to route templates.</li>
+          <li><code class="code">/remote</code>: Illustrates how remote data can be fetched and passed to route templates.</li>
+        </ul>
+
+      </main>
+
+      <%- include('../includes/footer') %>
+    </div>
+  </body>
+</html>

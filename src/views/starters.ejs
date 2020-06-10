@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="<%= millimetr.globals.language %>">
+  <%- include('../includes/head', { title: millimetr.globals.title, description: millimetr.globals.description }) %>
+
+  <body>
+    <div class="layout">
+      <%- include('../includes/menu', { routes: millimetr.internals.routes.all, currentUrl: millimetr.internals.routes.active.url }) %>
+
+      <main class="layout__content">
+        <h1><%= title %></h1>
+
+        <p>
+          The following is pulled directly from the <code class="code">src/data/starters.json</code> file during the build process.
+        </p>
+
+        <ul class="grid">
+            <% starters.forEach(({ name, icon, description, url }) => { %>
+              <li class="grid__item">
+                <a class="card card_link" href="<%= url %>" target="_blank">
+                  <h3 class="card__title"><%= icon %> <%= name %></h3>
+
+                  <p class="card__description"><%= description %></p>
+                </a>
+              </li>
+            <% }); %>
+        </ul>
+      </main>
+
+      <%- include('../includes/footer') %>
+    </div>
+  </body>
+</html>
