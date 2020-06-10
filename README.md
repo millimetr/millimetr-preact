@@ -1,4 +1,4 @@
-# 🔨 millimetr-default
+# ⚛️ millimetr-preact
 
 This is a basic millimetr starting template.
 
@@ -17,6 +17,7 @@ _Note that the CSS selectors in this demo follow the [BEM convention](https://en
 - 📄 **HTML templates are written in [EJS](https://ejs.co/)**
 - 🤖 **The `millimetr.config.js` file is central to this starter.**
 - 👓 **No hidden behaviour, everything is documented via `millimetr.config.js` file.**
+- 🚫 **No JavaScript transpilation is included in this starter**
 
 ## Example routes
 
