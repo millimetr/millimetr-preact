@@ -1,4 +1,4 @@
-#  ⚛️ millimetr-preact
+# ⚛️ millimetr-preact
 
 A millimetr starting template with [Preact](https://preactjs.com/) integration.
 
