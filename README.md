@@ -1,6 +1,6 @@
-# 🔨 millimetr-default
+#  ⚛️ millimetr-preact
 
-This is a basic millimetr starting template.
+A millimetr starting template with [Preact](https://preactjs.com/) integration.
 
 It intentionally has as little configuration and integrations as possible - allowing you to configure it how you want from the ground up. See the template in action at [https://millimetr-default.netlify.app](https://millimetr-default.netlify.app) 
 
@@ -8,7 +8,7 @@ _Note that the CSS selectors in this demo follow the [BEM convention](https://en
 
 ## Getting started
 
-1. `git clone https://github.com/millimetr/millimetr-default.git`
+1. `git clone https://github.com/millimetr/millimetr-preact.git`
 2. `npm install`
 3. `npm start`
 
@@ -17,6 +17,8 @@ _Note that the CSS selectors in this demo follow the [BEM convention](https://en
 - 📄 **HTML templates are written in [EJS](https://ejs.co/)**
 - 🤖 **The `millimetr.config.js` file is central to this starter.**
 - 👓 **No hidden behaviour, everything is documented via `millimetr.config.js` file.**
+- ⚛️ **Preact, Preact Hooks and HTM included as `<script>` tags via HTML.**
+- 🚫 **No JavaScript transpilation is included in this starter.**
 
 ## Example routes
 

@@ -1,3 +1,5 @@
+const STARTERS_ARRAY = require('./src/data/starters.json');
+
 const createConfig = async () => ({
     /**
      * Files that should be copied directly to build.
@@ -123,13 +125,13 @@ const createConfig = async () => ({
     routes: [
         {
             url: '/',
-            title: 'Millimeter Default Starter',
+            title: 'Millimeter Preact Starter',
             template: './src/views/homepage.ejs',
         },
         {
             url: '/hardcoded',
             title: 'Hardcoded Data',
-            starters: STARTERS_ARRAY.filter(({ name }) => name !== 'millimetr-default'),
+            starters: STARTERS_ARRAY.filter(({ name }) => name !== 'millimetr-preact'),
             template: './src/views/starters.ejs',
         },
         {
